@@ -9,7 +9,7 @@ const NavbarItem = ({ title, classProps }) => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+    <nav className=" flex justify-between w-full md:justify-center  items-center p-4">
       <div className="md:flex[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-32 crusor-pointer" />
       </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <NavbarItem key={items + index} title={items} classProps="my-2 text-lg"/>
               )
             )}
-            <li className="bg-[#2952e3] px-3 py-1 mx-3 rounded-full cursor-pointer hover:bg-[#2546bd] ">
+            <li className="flex bg-[#2952e3] px-3 py-1 mx-3 rounded-full cursor-pointer hover:bg-[#2546bd] w-2/6 justify-center">
               Login
             </li>
           </ul>
