@@ -1,7 +1,7 @@
 {
-  "name": "client",
+  "name": "vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.3.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -22,5 +22,9 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6",
     "vite": "^3.0.0"
-  }
+  },
+  "description": "haah",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
