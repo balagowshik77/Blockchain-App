@@ -25,11 +25,10 @@ contract Transactions {
 
     TransferStruct[] transactions;
 
-    function addToBlockChain(
+    function addToBlockchain(
         address payable receiver,
         uint256 amount,
         string memory message,
-        uint256 timestamp,
         string memory keyword
     ) public {
         transactionCount += 1;
@@ -43,12 +42,13 @@ contract Transactions {
                 keyword
             )
         );
+
         emit Transfer(
             msg.sender,
             receiver,
             amount,
             message,
-            timestamp,
+            block.timestamp,
             keyword
         );
     }
